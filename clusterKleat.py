@@ -18,7 +18,7 @@ def iterAHC(mylist, window=20):
         if mymin <= window:
             mylist[r] = sum([mylist[r], mylist[s]])/2
             del(mylist[s])
-        if mymin >= window:
+        if mymin > window:
             return mylist
 
 # Agglomerative Heirarchical Clustering
